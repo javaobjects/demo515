@@ -18,7 +18,9 @@ public class Test {
 		}
 		
 		int b = 0;
-		int a = 10 / b;
+		if(b != 0) {
+			int a = 10 / b;
+		}
 		
 		for (int i = 0; i < 10; i++) {
 			System.out.println("i: " + i);
