@@ -19,13 +19,16 @@ public class TestExceptionHandler2 {
 			
 			
 			Class.forName("java.a.b");
-
+//		} catch (ClassNotFoundException | IOException e) {//Java7对catch的改写，可以多个异常同时写
+//			e.printStackTrace();
 		} catch (FileNotFoundException e) {
+			System.out.println("a");
 			e.printStackTrace();
 		} catch (ClassNotFoundException e1) {
 
 			e1.printStackTrace();
 		} catch (IOException e) {
+			System.out.println("b");
 			e.printStackTrace();
 //1.finally语句块有什么 作用？
 //	用于释放资源，即使代码抛出异常，

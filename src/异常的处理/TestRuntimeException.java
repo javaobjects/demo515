@@ -24,6 +24,5 @@ public class TestRuntimeException {
 		FileInputStream is = new FileInputStream(file);
 		
 		int result = is.read();
-		
 	}
 }

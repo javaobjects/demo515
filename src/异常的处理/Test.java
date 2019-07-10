@@ -17,10 +17,24 @@ public class Test {
 			System.out.println(i);
 		}
 		
-		int b = 0;
-		if(b != 0) {
-			int a = 10 / b;
+//		int b = 0;
+//		if(b != 0) {
+//			int a = 10 / b;
+//		}
+		
+		try {
+			Class.forName("java.a.b");
+			System.out.println("a");
+		} catch (Exception e) {
+			System.out.println("b");
+			e.printStackTrace();
+		}finally {
+			System.out.println("d");
 		}
+		
+		System.out.println("c");
+		
+		
 		
 		for (int i = 0; i < 10; i++) {
 			System.out.println("i: " + i);
